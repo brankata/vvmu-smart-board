@@ -105,7 +105,7 @@ DAYS = {
 def root():
     return {"message": "VVMU Schedule API работи!"}
 
-# ВАЖНО: по-специфичният route трябва да е ПРЕДИ общия!
+# ВАЖНО: по-специфичният route трябва да е преди общия!
 @app.get("/schedule/day/{day_number}")
 def get_schedule_by_number(day_number: int):
     if day_number not in DAYS:
